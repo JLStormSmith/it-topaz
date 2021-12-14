@@ -26,21 +26,140 @@ body {
 }
 #red {
 	background-color: #900;
+	float: left;
+	padding: 15px
 }
 #green {
 	background-color: #090;
+	float: right;
+	padding: 15px;
 }
 #blue {
 	background-color: #00F;
+	float: left;
+	padding: 15px;
 }
 #purple {
 	background-color: #63C;
+	float: right;
+	padding: 15px;
 }
 #footer {
 	background-color: #666;
+	float:initial;
+	padding: 15px;
+	
+	
 }
 h1 {
 	color: #000;
 	font-weight: normal;
 	padding: 50px;
+	
+}
+#red1 {
+	background-color: #900;
+	float: left;
+	padding: 15px
+}
+#green1 {
+	background-color: #090;
+	float: right;
+	padding: 15px;
+}
+#blue1 {
+	background-color: #00F;
+	float: left;
+	padding: 15px;
+}
+#purple1 {
+	background-color: #63C;
+	float: right;
+	padding: 15px;
+}
+#footer1 {
+	background-color: #666;
+	float:initial;
+	padding: 15px;
+	
+	
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+	
+}
+#red2 {
+	background-color: #900;
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+#green2 {
+	background-color: #090;
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+#blue2 {
+	background-color: #00F;
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+
+}
+#purple2 {
+	background-color: #63C;
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+}
+#footer2 {
+	background-color: #666;
+	position: absolute;
+	top: 50%;
+	width: 50%;
+	justify-content: center;
+	
+	
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+	
+}
+#red3 {
+	background-color: #900;
+	float: left;
+	padding: 15px
+}
+#green3 {
+	background-color: #090;
+	float: right;
+	padding: 15px;
+}
+#blue3 {
+	background-color: #00F;
+	float: left;
+	padding: 15px;
+}
+#purple3 {
+	background-color: #63C;
+	float: right;
+	padding: 15px;
+}
+#footer3 {
+	background-color: #666;
+	float:initial;
+	padding: 15px;
+	
+	
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+	
 }
