@@ -23,31 +23,37 @@ body {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	
 }
+
+/*Float 1*/
 #red {
 	background-color: #900;
 	float: left;
-	padding: 15px
+	padding: 20%;
+	margin: 10px;
 }
 #green {
 	background-color: #090;
-	float: right;
-	padding: 15px;
+	float: left;
+	padding: 20%;
+	margin: 10px;
 }
 #blue {
 	background-color: #00F;
 	float: left;
-	padding: 15px;
+	padding: 20%;
+	margin: 10px
 }
 #purple {
 	background-color: #63C;
-	float: right;
-	padding: 15px;
+	float: left;
+	padding: 20%;
+	margin:10px;
 }
 #footer {
 	background-color: #666;
-	float:initial;
-	padding: 15px;
+	clear:both;
 	
 	
 }
@@ -57,30 +63,35 @@ h1 {
 	padding: 50px;
 	
 }
+
+/*Float 2*/
 #red1 {
 	background-color: #900;
 	float: left;
-	padding: 15px
+	padding: 60px;
+	margin: 10px
 }
 #green1 {
 	background-color: #090;
-	float: right;
-	padding: 15px;
+	float: left;
+	padding: 60px;
+	margin: 10px
 }
 #blue1 {
 	background-color: #00F;
 	float: left;
-	padding: 15px;
+	padding: 60px;
+	margin: 10px;
 }
 #purple1 {
 	background-color: #63C;
-	float: right;
-	padding: 15px;
+	float: left;
+	padding: 60px;
+	margin: 10px;
 }
 #footer1 {
 	background-color: #666;
-	float:initial;
-	padding: 15px;
+	clear:both;
 	
 	
 }
@@ -89,6 +100,7 @@ h1 {
 	font-weight: normal;
 	padding: 50px;
 	
+/*Absolute 1*/
 }
 #red2 {
 	background-color: #900;
@@ -130,10 +142,15 @@ h1 {
 	padding: 50px;
 	
 }
+
+/*Absolute 2*/
 #red3 {
 	background-color: #900;
-	float: left;
-	padding: 15px
+	position:relative;
+	position:absolute;
+	top: 0;
+	left: 0;
+	
 }
 #green3 {
 	background-color: #090;
