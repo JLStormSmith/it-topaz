@@ -1,0 +1,56 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<style>
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+</style>
+<form id="TextExampleDOMForm" onsubmit="return false">
+<label for="txtName">Operand 1:  </label>
+<input type="text" id="Operand1" name="Operand1" size="20" maxlength="20"
+    data-rule-required="true"  data-msg-required="Name is Required" >
+<label for="txtName" class="error"></label>
+<label id="SubmitExampleValue"></label>
+<br>
+<label>Operator:  </label>
+<label for="rdChevrolet"><input type="radio" id="rdChevrolet" name="rdcar" value="Chevrolet" 
+    data-rule-required="true" data-msg-required="Car is Required" />Chevrolet</label>
+<label for="rdFord"><input type="radio" id="rdFord" name="rdcar" value="Ford" />Ford Motor</label>
+<label for="rdDodge"><input type="radio" id="rdDodge" name="rdcar" value="Dodge" />Dodge Ram</label>
+<label for="rdcar" class="error"></label>
+<span id="RadioExampleValue"></span>
+<br>
+<label for="txtName">Operand 2:  </label>
+<input type="text" id="txtName" name="txtName" size="20" maxlength="20"
+    data-rule-required="true"  data-msg-required="Name is Required" >
+<label for="txtName" class="error"></label>
+<label id="SubmitExampleValue"></label>
+<br>
+<br>
+<input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+<input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="">
+
+</form>
+<script>
+function RadioExample() {
+    if (document.getElementById("rdChevrolet").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdChevrolet").value;
+    }
+    if (document.getElementById("rdFord").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdFord").value;
+    }
+    if (document.getElementById("rdDodge").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdDodge").value;
+    }
+}
+
+
+function TextExample() 
+{
+    document.getElementById("SubmitExampleValue").innerHTML = document.getElementById("txtName").value;
+}
