@@ -31,7 +31,7 @@ header.primary h1 a{
 }
 header.primary h1 a:link,
 header.primary h1 a:visited{
-    color: black;
+    color: rgba(157, 222, 72, 0.601);
     text-decoration:none;
     
 
