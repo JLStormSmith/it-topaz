@@ -1,0 +1,58 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<style>
+   .error {
+        color: red;
+        padding-left: 5px;
+   }
+</style>
+<form id="TextExampleDOMForm" onsubmit="return false">
+<label for="numName">Operand 1:  </label>
+<input type="text" id="Operand1" name="Operand1" size="20" maxlength="20"
+    data-rule-required="true"  data-msg-required="Number is Required" >
+<label for="txtName" class="error"></label>
+<label id="SubmitExampleValue"></label>
+<br>
+<label>Operator:  </label>
+<label for="rdAdd"><input type="radio" id="rdAdd" name="numOp" value="Add" 
+    data-rule-required="true" data-msg-required="Number is Required" />+ </label>
+<label for="rdMinus"><input type="radio" id="rdMinus" name="rdcar" value="Minus" /> - </label>
+<label for="rdMultiply"><input type="radio" id="rdMultiply" name="rdcar" value="Multiply" /> * </label>
+<label for="rdDivide"><input type="radio" id="rdDivide" name="opsign" value="Divide"/> / </label>
+<label for="rdcar" class="error"></label>
+<span id="SubmitExampleValue"></span>
+<br>
+<label for="txtName">Operand 2:  </label>
+<input type="text" id="txtName" name="txtName" size="20" maxlength="20"
+    data-rule-required="true"  data-msg-required="Name is Required" >
+<label for="txtName" class="error"></label>
+<label id="SubmitExampleValue"></label>
+<br>
+<br>
+<input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+<input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="">
+
+</form>
+<script>
+function RadioExample() {
+    if (document.getElementById("rdAdd").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdAdd").value;
+    }
+    if (document.getElementById("rdMinus").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdMinus").value;
+    }
+    if (document.getElementById("rdMultiply").checked) {
+        document.getElementById("RadioExampleValue").innerHTML = 
+            document.getElementById("rdMultiply").value;
+    }
+}
+
+
+function TextExample() 
+{
+    document.getElementById("SubmitExampleValue").innerHTML = document.getElementById("txtName").value;
+}
+</script>
